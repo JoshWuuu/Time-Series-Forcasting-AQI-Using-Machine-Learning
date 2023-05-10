@@ -1,4 +1,4 @@
-# AQI-analysis
+# Time-Series-Forcasting-AQI-Using-Machine-Learning
 ## Introduction
 It is a research project at Stanford University in 2020. The project is a Time Series Forecasting topic. The languages and relevent packages are **Python - Tensorflow - Keras - Scikit-learn**. The project aims to predict short-term and long-term air quality index (AQI) in Bangkok, Thailand using weather, wind and historical air quality index. 
 ## Dataset
@@ -38,4 +38,4 @@ For short-term prediction, residual lstm perform the best, having the lowest tes
   alt="Results of sklearn models" 
   width="800" height="400">
 </p>
-The results are visualized on the mapbox platform. [link](https://www.youtube.com/watch?v=F2fkRrdLGEQ)
+The results are visualized on the mapbox platform. (https://www.youtube.com/watch?v=F2fkRrdLGEQ)
