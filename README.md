@@ -8,26 +8,34 @@ The columns are selected using xgboosting feature importance with cross validati
 ## Model
 For short term prediction (next 1 hour), the models include lasso, random forest, boosting, svr, DNN, CNN, LSTM, and Residual LSTM . The loss is MSE. 
 
-For long term prediction (next 24 hours), the models include DNN, CNN, LSTM (output 24 hours at a time), Autoregressive LSTM (first next hour prediction will be the input for the next hour's prediction)
+For long term prediction (next 24 hours), the models include DNN, CNN, LSTM (output 24 hours at a time), Autoregressive LSTM (first next hour prediction will be the input for the next hour's prediction, shown as plot below)
+<p align="center">
+  <img 
+  src="results/autoregressive_lstm.png" 
+  alt="Results of sklearn models" 
+  width="500" height="300">
+</p>
+
 ## Result
-<figure>
+<p align="center">
   <img 
   src="results/short_term_mae.png" 
   alt="Results of sklearn models" 
-  width="600" height="300">
-</figure>
-<figure>
+  width="500" height="300">
+</p>
+<p align="center">
   <img 
-  src="results/short_term_mae.png" 
+  src="results/long_term_mae.png" 
   alt="Results of sklearn models" 
-  width="600" height="300">
-</figure>
+  width="470" height="270">
+</p>
 For short-term prediction, residual lstm perform the best, having the lowest test MAE. For long-term prediction, CNN perform the best, having the lowest test MAE. 
+
 ## Visualzation
-<figure>
+<p align="center">
   <img 
-  src="results/mapbox.png" 
+  src="results/mapbox_visualization.png" 
   alt="Results of sklearn models" 
-  width="600" height="300">
-</figure>
-The result also visualized on the mapbox platform [link](https://www.youtube.com/watch?v=F2fkRrdLGEQ)
+  width="800" height="400">
+</p>
+The results are visualized on the mapbox platform. [link](https://www.youtube.com/watch?v=F2fkRrdLGEQ)
